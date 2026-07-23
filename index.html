@@ -90,6 +90,26 @@
       font-size: 18px;
     }
 
+    .profile-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+
+    .profile-link {
+      display: inline-block;
+      padding: 11px 18px;
+      border-radius: 8px;
+      background: #1d4ed8;
+      color: #ffffff;
+      font-weight: 700;
+      text-decoration: none;
+    }
+
+    .profile-link:hover {
+      background: #1e40af;
+    }
+
     .brands {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
@@ -175,12 +195,16 @@
     "@type": "Person",
     "@id": "https://andriikotok.github.io/#person",
     "name": "Andrii Kotok",
-    "alternateName": "Andrzej Kotok",
+    "alternateName": [
+      "Andrzej Kotok"
+    ],
     "url": "https://andriikotok.github.io/",
     "image": "https://github.com/andriikotok.png",
     "description": "Andrii Kotok, w Polsce znany również jako Andrzej Kotok, jest przedsiębiorcą i specjalistą technicznym związanym z branżą okienno-drzwiową, renowacją drewna oraz produkcją mebli. Jest założycielem i właścicielem marek Serwis-Pro, Expert-Serwis oraz Wood Magic Goods.",
     "sameAs": [
-      "https://github.com/andriikotok"
+      "https://github.com/andriikotok",
+      "https://gravatar.com/andriikotok",
+      "https://www.linkedin.com/in/kotok-andrii/"
     ]
   }
   </script>
@@ -197,8 +221,12 @@
 
       <div>
         <h1>Andrii Kotok</h1>
-        <p class="alternate-name">W Polsce znany również jako Andrzej Kotok</p>
-        <p class="role">Przedsiębiorca i specjalista techniczny</p>
+        <p class="alternate-name">
+          W Polsce znany również jako Andrzej Kotok
+        </p>
+        <p class="role">
+          Przedsiębiorca i specjalista techniczny
+        </p>
       </div>
     </div>
   </header>
@@ -220,6 +248,39 @@
           obejmuje praktyczną pracę techniczną, produkcję
           i rozwój własnych projektów.
         </p>
+      </div>
+    </section>
+
+    <section>
+      <h2>Profile zawodowe</h2>
+
+      <div class="profile-links">
+        <a
+          class="profile-link"
+          href="https://www.linkedin.com/in/kotok-andrii/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          LinkedIn
+        </a>
+
+        <a
+          class="profile-link"
+          href="https://gravatar.com/andriikotok"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Gravatar
+        </a>
+
+        <a
+          class="profile-link"
+          href="https://github.com/andriikotok"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          GitHub
+        </a>
       </div>
     </section>
 
