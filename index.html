@@ -11,11 +11,35 @@
     content="Andrii Kotok, znany również jako Andrzej Kotok — przedsiębiorca i specjalista techniczny, założyciel marek Serwis-Pro, Expert-Serwis i Wood Magic Goods."
   >
 
+  <meta name="robots" content="index, follow">
+  <meta name="theme-color" content="#1d4ed8">
+
   <link rel="canonical" href="https://andriikotok.github.io/">
+
+  <meta property="og:type" content="profile">
+  <meta property="og:title" content="Andrii Kotok | Andrzej Kotok">
+  <meta
+    property="og:description"
+    content="Przedsiębiorca i praktyk techniczny związany z serwisem okien i drzwi, renowacją drewna oraz produkcją mebli."
+  >
+  <meta property="og:url" content="https://andriikotok.github.io/">
+  <meta property="og:image" content="https://github.com/andriikotok.png">
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Andrii Kotok | Andrzej Kotok">
+  <meta
+    name="twitter:description"
+    content="Przedsiębiorca i specjalista techniczny. Założyciel Serwis-Pro, Expert-Serwis i Wood Magic Goods."
+  >
+  <meta name="twitter:image" content="https://github.com/andriikotok.png">
 
   <style>
     * {
       box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
     }
 
     body {
@@ -99,15 +123,40 @@
     .profile-link {
       display: inline-block;
       padding: 11px 18px;
+      border: 2px solid #1d4ed8;
       border-radius: 8px;
-      background: #1d4ed8;
-      color: #ffffff;
+      background: #ffffff;
+      color: #1d4ed8;
       font-weight: 700;
       text-decoration: none;
+      transition:
+        background-color 0.2s ease,
+        color 0.2s ease,
+        transform 0.2s ease;
     }
 
-    .profile-link:hover {
+    .profile-link:hover,
+    .profile-link:focus-visible {
+      background: #1d4ed8;
+      color: #ffffff;
+      transform: translateY(-1px);
+    }
+
+    .profile-link.primary {
+      background: #1d4ed8;
+      color: #ffffff;
+    }
+
+    .profile-link.primary:hover,
+    .profile-link.primary:focus-visible {
       background: #1e40af;
+      border-color: #1e40af;
+    }
+
+    .section-description {
+      max-width: 760px;
+      margin: -8px 0 22px;
+      color: #64748b;
     }
 
     .brands {
@@ -148,7 +197,8 @@
       text-decoration: none;
     }
 
-    .brand-link:hover {
+    .brand-link:hover,
+    .brand-link:focus-visible {
       background: #1e40af;
     }
 
@@ -166,6 +216,11 @@
       color: #64748b;
       background: #ffffff;
       border-top: 1px solid #e5e7eb;
+    }
+
+    a:focus-visible {
+      outline: 3px solid #93c5fd;
+      outline-offset: 3px;
     }
 
     @media (max-width: 760px) {
@@ -192,19 +247,94 @@
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "Person",
-    "@id": "https://andriikotok.github.io/#person",
-    "name": "Andrii Kotok",
-    "alternateName": [
-      "Andrzej Kotok"
-    ],
-    "url": "https://andriikotok.github.io/",
-    "image": "https://github.com/andriikotok.png",
-    "description": "Andrii Kotok, w Polsce znany również jako Andrzej Kotok, jest przedsiębiorcą i specjalistą technicznym związanym z branżą okienno-drzwiową, renowacją drewna oraz produkcją mebli. Jest założycielem i właścicielem marek Serwis-Pro, Expert-Serwis oraz Wood Magic Goods.",
-    "sameAs": [
-      "https://github.com/andriikotok",
-      "https://gravatar.com/andriikotok",
-      "https://www.linkedin.com/in/kotok-andrii/"
+    "@graph": [
+      {
+        "@type": "WebSite",
+        "@id": "https://andriikotok.github.io/#website",
+        "url": "https://andriikotok.github.io/",
+        "name": "Andrii Kotok | Andrzej Kotok",
+        "inLanguage": "pl",
+        "about": {
+          "@id": "https://andriikotok.github.io/#person"
+        }
+      },
+      {
+        "@type": "Person",
+        "@id": "https://andriikotok.github.io/#person",
+        "name": "Andrii Kotok",
+        "alternateName": [
+          "Andrzej Kotok"
+        ],
+        "url": "https://andriikotok.github.io/",
+        "image": "https://github.com/andriikotok.png",
+        "jobTitle": "Przedsiębiorca i specjalista techniczny",
+        "description": "Andrii Kotok, w Polsce znany również jako Andrzej Kotok, jest przedsiębiorcą i praktykiem technicznym związanym z branżą okienno-drzwiową, renowacją drewna oraz produkcją mebli. Jest założycielem i właścicielem marek Serwis-Pro, Expert-Serwis oraz Wood Magic Goods.",
+        "knowsAbout": [
+          "serwis okien i drzwi",
+          "diagnostyka usterek okien i drzwi",
+          "naprawa i regulacja okien",
+          "renowacja drewna",
+          "stolarstwo",
+          "projektowanie i produkcja mebli",
+          "przedsiębiorczość techniczna"
+        ],
+        "worksFor": {
+          "@id": "https://andriikotok.github.io/#serwis-pro"
+        },
+        "affiliation": [
+          {
+            "@id": "https://andriikotok.github.io/#serwis-pro"
+          },
+          {
+            "@id": "https://andriikotok.github.io/#expert-serwis"
+          },
+          {
+            "@id": "https://andriikotok.github.io/#wood-magic-goods"
+          }
+        ],
+        "sameAs": [
+          "https://github.com/andriikotok",
+          "https://gravatar.com/andriikotok",
+          "https://www.linkedin.com/in/kotok-andrii/",
+          "https://sessionize.com/andriikotok/",
+          "https://speakerhub.com/speaker/andrii-kotok",
+          "https://www.crunchbase.com/person/andrii-kotok",
+          "https://andriikotok.medium.com/",
+          "https://andriikotok.substack.com/",
+          "https://orcid.org/0009-0000-0845-7193",
+          "https://x.com/andriikotok"
+        ]
+      },
+      {
+        "@type": "Organization",
+        "@id": "https://andriikotok.github.io/#serwis-pro",
+        "name": "Serwis-Pro",
+        "legalName": "Serwis-Pro Andrii Kotok",
+        "url": "https://serwis-pro-poznan.pl/",
+        "description": "Serwis, diagnostyka, naprawa i regulacja okien oraz drzwi w Poznaniu i okolicach.",
+        "founder": {
+          "@id": "https://andriikotok.github.io/#person"
+        }
+      },
+      {
+        "@type": "Organization",
+        "@id": "https://andriikotok.github.io/#expert-serwis",
+        "name": "Expert-Serwis",
+        "url": "https://expert-serwis.com/",
+        "description": "Renowacja drewnianych okien, drzwi i tarasów w Poznaniu i okolicach.",
+        "founder": {
+          "@id": "https://andriikotok.github.io/#person"
+        }
+      },
+      {
+        "@type": "Organization",
+        "@id": "https://andriikotok.github.io/#wood-magic-goods",
+        "name": "Wood Magic Goods",
+        "description": "Marka łącząca rzemiosło stolarskie, autorskie wzornictwo oraz produkcję mebli na zamówienie.",
+        "founder": {
+          "@id": "https://andriikotok.github.io/#person"
+        }
+      }
     ]
   }
   </script>
@@ -216,14 +346,18 @@
       <img
         class="profile-photo"
         src="https://github.com/andriikotok.png"
-        alt="Andrii Kotok, znany również jako Andrzej Kotok"
+        alt="Andrii Kotok, w Polsce znany również jako Andrzej Kotok"
+        width="180"
+        height="180"
       >
 
       <div>
         <h1>Andrii Kotok</h1>
+
         <p class="alternate-name">
           W Polsce znany również jako Andrzej Kotok
         </p>
+
         <p class="role">
           Przedsiębiorca i specjalista techniczny
         </p>
@@ -244,9 +378,14 @@
 
         <p>
           Jest założycielem i właścicielem marek Serwis-Pro,
-          Expert-Serwis oraz Wood Magic Goods. Jego doświadczenie
-          obejmuje praktyczną pracę techniczną, produkcję
-          i rozwój własnych projektów.
+          Expert-Serwis oraz Wood Magic Goods. Łączy rozwój własnych
+          marek z osobistym wykonywaniem prac technicznych i produkcyjnych.
+        </p>
+
+        <p>
+          Jego doświadczenie obejmuje diagnostykę, serwis, naprawę
+          i regulację okien oraz drzwi, renowację elementów drewnianych,
+          stolarstwo, projektowanie produktów i wykonywanie mebli.
         </p>
       </div>
     </section>
@@ -254,26 +393,104 @@
     <section>
       <h2>Profile zawodowe</h2>
 
+      <p class="section-description">
+        Publiczne profile potwierdzające tożsamość, doświadczenie
+        zawodowe i działalność Andrii Kotoka.
+      </p>
+
       <div class="profile-links">
         <a
-          class="profile-link"
+          class="profile-link primary"
           href="https://www.linkedin.com/in/kotok-andrii/"
           target="_blank"
-          rel="noopener noreferrer"
+          rel="me noopener noreferrer"
         >
           LinkedIn
         </a>
 
         <a
           class="profile-link"
+          href="https://www.crunchbase.com/person/andrii-kotok"
+          target="_blank"
+          rel="me noopener noreferrer"
+        >
+          Crunchbase
+        </a>
+
+        <a
+          class="profile-link"
+          href="https://orcid.org/0009-0000-0845-7193"
+          target="_blank"
+          rel="me noopener noreferrer"
+        >
+          ORCID
+        </a>
+
+        <a
+          class="profile-link"
+          href="https://sessionize.com/andriikotok/"
+          target="_blank"
+          rel="me noopener noreferrer"
+        >
+          Sessionize
+        </a>
+
+        <a
+          class="profile-link"
+          href="https://speakerhub.com/speaker/andrii-kotok"
+          target="_blank"
+          rel="me noopener noreferrer"
+        >
+          SpeakerHub
+        </a>
+
+        <a
+          class="profile-link"
           href="https://gravatar.com/andriikotok"
           target="_blank"
-          rel="noopener noreferrer"
+          rel="me noopener noreferrer"
         >
           Gravatar
         </a>
 
-        </div>
+        <a
+          class="profile-link"
+          href="https://x.com/andriikotok"
+          target="_blank"
+          rel="me noopener noreferrer"
+        >
+          X
+        </a>
+      </div>
+    </section>
+
+    <section>
+      <h2>Publikacje</h2>
+
+      <p class="section-description">
+        Materiały dotyczące praktycznej pracy technicznej,
+        serwisu okien i drzwi, renowacji drewna oraz produkcji.
+      </p>
+
+      <div class="profile-links">
+        <a
+          class="profile-link"
+          href="https://andriikotok.medium.com/"
+          target="_blank"
+          rel="me noopener noreferrer"
+        >
+          Medium
+        </a>
+
+        <a
+          class="profile-link"
+          href="https://andriikotok.substack.com/"
+          target="_blank"
+          rel="me noopener noreferrer"
+        >
+          Substack
+        </a>
+      </div>
     </section>
 
     <section>
@@ -284,7 +501,7 @@
           <h3>Serwis-Pro</h3>
 
           <p>
-            Serwis, naprawa i regulacja okien oraz drzwi
+            Serwis, diagnostyka, naprawa i regulacja okien oraz drzwi
             w Poznaniu i okolicach.
           </p>
 
@@ -320,12 +537,12 @@
           <h3>Wood Magic Goods</h3>
 
           <p>
-            Marka premium łącząca rzemiosło stolarskie,
-            autorskie wzornictwo oraz produkcję mebli na zamówienie.
+            Marka łącząca rzemiosło stolarskie, autorskie wzornictwo
+            oraz produkcję mebli na zamówienie.
           </p>
 
           <span class="coming-soon">
-            Oficjalna strona marki
+            Oficjalna strona marki w przygotowaniu
           </span>
         </article>
       </div>
