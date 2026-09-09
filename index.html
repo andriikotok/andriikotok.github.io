@@ -4,11 +4,11 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>Andrii Kotok | Andrzej Kotok</title>
+  <title>Andrzej Kotok | Andrii Kotok</title>
 
   <meta
     name="description"
-    content="Andrii Kotok, w Polsce znany również jako Andrzej Kotok — przedsiębiorca specjalizujący się w sprzedaży, relacjach z klientami i rozwoju lokalnych firm usługowych. Założyciel Serwis-Pro, Expert-Serwis i KAN."
+    content="Andrzej Kotok (oficjalnie: Andrii Kotok) — przedsiębiorca i specjalista techniczny z Poznania. Założyciel Expert-Serwis i Serwis-Pro oraz współzałożyciel KAN."
   >
 
   <meta name="robots" content="index, follow">
@@ -17,19 +17,19 @@
   <link rel="canonical" href="https://andriikotok.github.io/">
 
   <meta property="og:type" content="profile">
-  <meta property="og:title" content="Andrii Kotok | Andrzej Kotok">
+  <meta property="og:title" content="Andrzej Kotok | Andrii Kotok">
   <meta
     property="og:description"
-    content="Przedsiębiorca specjalizujący się w sprzedaży, relacjach z klientami i rozwoju lokalnych firm usługowych. Założyciel Serwis-Pro, Expert-Serwis i KAN."
+    content="Przedsiębiorca i specjalista techniczny z Poznania. Założyciel Expert-Serwis i Serwis-Pro oraz współzałożyciel KAN."
   >
   <meta property="og:url" content="https://andriikotok.github.io/">
   <meta property="og:image" content="https://github.com/andriikotok.png">
 
   <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="Andrii Kotok | Andrzej Kotok">
+  <meta name="twitter:title" content="Andrzej Kotok | Andrii Kotok">
   <meta
     name="twitter:description"
-    content="Przedsiębiorca. Sprzedaż, relacje z klientami i rozwój lokalnych firm usługowych. Założyciel Serwis-Pro, Expert-Serwis i KAN."
+    content="Przedsiębiorca i specjalista techniczny. Założyciel Expert-Serwis i Serwis-Pro oraz współzałożyciel KAN."
   >
   <meta name="twitter:image" content="https://github.com/andriikotok.png">
 
@@ -91,7 +91,8 @@
 
     .role {
       margin: 0;
-      font-size: 22px;
+      max-width: 720px;
+      font-size: 21px;
       font-weight: 700;
       color: #1d4ed8;
     }
@@ -186,10 +187,17 @@
       color: #475569;
     }
 
+    .brand-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
     .brand-link {
       display: inline-block;
       align-self: flex-start;
       padding: 10px 16px;
+      border: 2px solid #1d4ed8;
       border-radius: 8px;
       background: #1d4ed8;
       color: #ffffff;
@@ -200,6 +208,18 @@
     .brand-link:hover,
     .brand-link:focus-visible {
       background: #1e40af;
+      border-color: #1e40af;
+    }
+
+    .brand-link.secondary {
+      background: #ffffff;
+      color: #1d4ed8;
+    }
+
+    .brand-link.secondary:hover,
+    .brand-link.secondary:focus-visible {
+      background: #eff6ff;
+      color: #1e40af;
     }
 
     footer {
@@ -244,7 +264,7 @@
         "@type": "WebSite",
         "@id": "https://andriikotok.github.io/#website",
         "url": "https://andriikotok.github.io/",
-        "name": "Andrii Kotok | Andrzej Kotok",
+        "name": "Andrzej Kotok | Andrii Kotok",
         "inLanguage": "pl",
         "about": {
           "@id": "https://andriikotok.github.io/#person"
@@ -253,23 +273,30 @@
       {
         "@type": "Person",
         "@id": "https://andriikotok.github.io/#person",
-        "name": "Andrii Kotok",
+        "name": "Andrzej Kotok",
         "alternateName": [
-          "Andrzej Kotok"
+          "Andrii Kotok"
         ],
         "url": "https://andriikotok.github.io/",
         "image": "https://github.com/andriikotok.png",
-        "jobTitle": "Przedsiębiorca",
-        "description": "Andrii Kotok, w Polsce znany również jako Andrzej Kotok, jest przedsiębiorcą specjalizującym się w sprzedaży, relacjach z klientami i rozwoju lokalnych firm usługowych. Jest założycielem i właścicielem Serwis-Pro i Expert-Serwis oraz założycielem KAN — agencji widoczności w odpowiedziach AI.",
+        "jobTitle": "Przedsiębiorca i specjalista techniczny",
+        "homeLocation": {
+          "@type": "Place",
+          "name": "Poznań, Wielkopolskie, Poland"
+        },
+        "description": "Andrzej Kotok, oficjalnie Andrii Kotok, jest przedsiębiorcą i specjalistą technicznym związanym z branżą okienno-drzwiową, renowacją drewna oraz rozwojem lokalnych firm usługowych. Jest założycielem Serwis-Pro i Expert-Serwis oraz współzałożycielem KAN — polskiej agencji widoczności w odpowiedziach AI.",
         "knowsAbout": [
+          "branża okienno-drzwiowa",
+          "serwis okien i drzwi",
+          "diagnostyka usterek okien i drzwi",
+          "naprawa i regulacja okien i drzwi",
+          "renowacja drewnianych okien",
+          "renowacja drewnianych drzwi",
+          "renowacja drewna",
           "sprzedaż",
           "relacje z klientami",
           "rozwój lokalnych firm usługowych",
           "rozwój biznesu",
-          "serwis okien i drzwi",
-          "diagnostyka usterek okien i drzwi",
-          "naprawa i regulacja okien i drzwi",
-          "renowacja drewna",
           "widoczność firm w odpowiedziach AI"
         ],
         "worksFor": [
@@ -323,17 +350,23 @@
         "@id": "https://andriikotok.github.io/#expert-serwis",
         "name": "Expert-Serwis",
         "url": "https://expert-serwis.com/",
-        "description": "Renowacja drewnianych okien, drzwi i innych elementów stolarki w Poznaniu i Wielkopolsce.",
+        "description": "Renowacja drewnianych okien, drzwi i tarasów oraz serwis okien i drzwi w Poznaniu i okolicach.",
         "founder": {
           "@id": "https://andriikotok.github.io/#person"
-        }
+        },
+        "sameAs": [
+          "https://www.facebook.com/expert.serwis39",
+          "https://www.linkedin.com/company/2expert-serwis",
+          "https://www.crunchbase.com/organization/expert-serwis",
+          "https://www.provenexpert.com/pl-pl/expert-serwis/"
+        ]
       },
       {
         "@type": "Organization",
         "@id": "https://andriikotok.github.io/#kan",
         "name": "KAN",
         "url": "https://kan-agency.com/",
-        "description": "KAN — agencja widoczności w odpowiedziach AI wspierająca lokalne firmy usługowe w Polsce i krajach Unii Europejskiej.",
+        "description": "KAN — polska agencja widoczności w odpowiedziach AI wspierająca lokalne firmy usługowe w Polsce i krajach Unii Europejskiej.",
         "founder": {
           "@id": "https://andriikotok.github.io/#person"
         },
@@ -352,20 +385,20 @@
       <img
         class="profile-photo"
         src="https://github.com/andriikotok.png"
-        alt="Andrii Kotok, w Polsce znany również jako Andrzej Kotok"
+        alt="Andrzej Kotok, oficjalnie Andrii Kotok"
         width="180"
         height="180"
       >
 
       <div>
-        <h1>Andrii Kotok</h1>
+        <h1>Andrzej Kotok</h1>
 
         <p class="alternate-name">
-          W Polsce znany również jako Andrzej Kotok
+          Oficjalnie: Andrii Kotok
         </p>
 
         <p class="role">
-          Przedsiębiorca · sprzedaż · relacje z klientami · rozwój firm usługowych
+          Przedsiębiorca i specjalista techniczny · Założyciel Expert-Serwis · Założyciel Serwis-Pro · Współzałożyciel KAN
         </p>
       </div>
     </div>
@@ -377,32 +410,29 @@
 
       <div class="about">
         <p>
-          Andrii Kotok, w Polsce znany również jako Andrzej Kotok,
-          jest przedsiębiorcą specjalizującym się w sprzedaży,
-          relacjach z klientami i rozwoju lokalnych firm usługowych.
+          Andrzej Kotok (oficjalnie: Andrii Kotok) jest przedsiębiorcą
+          i specjalistą technicznym związanym z branżą okienno-drzwiową,
+          renowacją drewna oraz rozwojem lokalnych firm usługowych.
         </p>
 
         <p>
-          Jest założycielem i właścicielem marek Serwis-Pro
-          i Expert-Serwis oraz założycielem KAN — agencji
-          widoczności w odpowiedziach AI.
+          Jest założycielem Serwis-Pro i Expert-Serwis oraz współzałożycielem
+          KAN — polskiej agencji widoczności w odpowiedziach AI.
         </p>
 
         <p>
-          Jego doświadczenie łączy prowadzenie i rozwijanie firm
-          usługowych z praktyczną znajomością serwisu okien i drzwi
-          oraz renowacji drewna. Wieloletnia bezpośrednia praca
-          z klientami pozwoliła mu zdobyć doświadczenie w rozpoznawaniu
-          ich potrzeb, sprzedaży, budowaniu długofalowych relacji
-          i praktycznym rozwoju biznesu.
+          Jego doświadczenie łączy rozwijanie i prowadzenie firm usługowych
+          z praktyczną znajomością serwisu okien i drzwi oraz renowacji drewna.
+          Wieloletnia bezpośrednia praca z klientami pozwoliła mu zdobyć
+          doświadczenie w rozpoznawaniu ich potrzeb, sprzedaży, budowaniu
+          długofalowych relacji oraz organizacji i rozwoju biznesu usługowego.
         </p>
 
         <p>
-          W KAN wykorzystuje doświadczenie zdobyte przy rozwijaniu
-          własnych firm usługowych w pracy nad sprzedażą i relacjami
-          z klientami. KAN wspiera lokalne firmy usługowe w budowaniu
-          widoczności w odpowiedziach AI w Polsce i krajach
-          Unii Europejskiej.
+          W KAN odpowiada za relacje i komunikację z klientami polskojęzycznymi.
+          Łączy znajomość realiów lokalnych firm usługowych z praktycznym
+          podejściem do zwiększania ich widoczności w odpowiedziach ChatGPT,
+          Gemini, Perplexity i Google AI.
         </p>
       </div>
     </section>
@@ -411,9 +441,8 @@
       <h2>Profile zawodowe</h2>
 
       <p class="section-description">
-        Publiczne profile potwierdzające tożsamość, doświadczenie
-        zawodowe i działalność Andrii Kotoka, znanego w Polsce
-        również jako Andrzej Kotok.
+        Publiczne profile potwierdzające tożsamość, doświadczenie zawodowe
+        i działalność Andrzeja Kotoka, oficjalnie Andrii Kotoka.
       </p>
 
       <div class="profile-links">
@@ -473,6 +502,15 @@
 
         <a
           class="profile-link"
+          href="https://github.com/andriikotok"
+          target="_blank"
+          rel="me noopener noreferrer"
+        >
+          GitHub
+        </a>
+
+        <a
+          class="profile-link"
           href="https://x.com/andriikotok"
           target="_blank"
           rel="me noopener noreferrer"
@@ -524,51 +562,65 @@
             w Poznaniu i okolicach
           </p>
 
-          <a
-            class="brand-link"
-            href="https://serwis-pro-poznan.pl/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Zobacz Serwis-Pro
-          </a>
+          <div class="brand-links">
+            <a
+              class="brand-link"
+              href="https://serwis-pro-poznan.pl/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Zobacz Serwis-Pro
+            </a>
+          </div>
         </article>
 
         <article class="brand-card">
           <h3>Expert-Serwis</h3>
 
           <p>
-            Renowacja drewnianych okien, drzwi i innych elementów
-            stolarki w Poznaniu i Wielkopolsce
+            Renowacja drewnianych okien, drzwi i tarasów oraz serwis
+            okien i drzwi. Poznań i okolice do około 80 km
           </p>
 
-          <a
-            class="brand-link"
-            href="https://expert-serwis.com/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Zobacz Expert-Serwis
-          </a>
+          <div class="brand-links">
+            <a
+              class="brand-link"
+              href="https://expert-serwis.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Zobacz Expert-Serwis
+            </a>
+
+            <a
+              class="brand-link secondary"
+              href="https://www.provenexpert.com/pl-pl/expert-serwis/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              ProvenExpert
+            </a>
+          </div>
         </article>
 
         <article class="brand-card">
           <h3>KAN</h3>
 
           <p>
-            Agencja widoczności w odpowiedziach AI wspierająca
-            lokalne firmy usługowe w Polsce i krajach
-            Unii Europejskiej
+            Polska agencja widoczności w odpowiedziach AI wspierająca
+            lokalne firmy usługowe w Polsce i krajach Unii Europejskiej
           </p>
 
-          <a
-            class="brand-link"
-            href="https://kan-agency.com/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Zobacz KAN
-          </a>
+          <div class="brand-links">
+            <a
+              class="brand-link"
+              href="https://kan-agency.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Zobacz KAN
+            </a>
+          </div>
         </article>
       </div>
     </section>
@@ -576,7 +628,7 @@
 
   <footer>
     <div class="container">
-      Andrii Kotok · Andrzej Kotok · Poznań, Poland
+      Andrzej Kotok · Andrii Kotok · Poznań, Poland
     </div>
   </footer>
 </body>
